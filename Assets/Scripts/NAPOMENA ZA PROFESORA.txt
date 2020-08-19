@@ -1,0 +1,11 @@
+Slajder za podešavanje jačine zvuka na početnoj sceni podešava jačinu zvuka kroz celu igru i tu jačinu pamti i kada se 
+izađe iz igre. Takođe kada se uđe ponovo u igru pozicija na tom slajderu treba da odgovara prthodno podešenoj jačini zvuka.
+Kada se otvori projekat u unity-ju i kada se pokrene igra to funkcioniše kako je gore opisano. 
+Međutim kada se igra build-uje i pokrene to nije slučaj. Najme podešena jačina zvuka se pamti i ispravno interpretira, ali pozicija 
+na slajderu je uvek na maksimumu iz nepoznatog razloga.(Na samom početku jačina zvuka i treba da bude na maksimumu 
+jer je tako definisano u klasi SoundVolume, međutim nije jasno zašto su jačina zvuka i vrednost pozicije slajdera različite kada
+se dobijaju iz istog objetka i iste metode(Klasa DataControler i metoda GetVolume). Takođe nije jasno zašto se ovo dešava kada 
+sve normalno radi u samom projektu u unity-ju)
+Sa tim slajderom moguće je normalno podešavati jačinu zvuka koja se 
+normalno pamti, ali kada se ponovo učita početna scena pozicija na slajderu je uvek na maksimumu bez obzira koja je jačina zvuka 
+prethodno podešena. 
